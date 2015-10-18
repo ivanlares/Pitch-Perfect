@@ -15,8 +15,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
   @IBOutlet weak var stopButton: UIButton!
   @IBOutlet weak var recordButton: UIButton!
   
-  var audioRecorder: AVAudioRecorder!
-  var recordedAudio: RecordedAudio!
+  var audioRecorder: AVAudioRecorder?
+  var recordedAudio: RecordedAudio?
   
   override func viewWillAppear(animated: Bool){
     stopButton.hidden = true
@@ -27,7 +27,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
   
   @IBAction func stopRecording(sender: UIButton) {
     recordingLabel.hidden = true
-    audioRecorder.stop()
+    audioRecorder?.stop()
     let audioSession = AVAudioSession.sharedInstance()
     do {
       try audioSession.setActive(false)
@@ -51,14 +51,17 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     do {
       audioRecorder =
-        try AVAudioRecorder(URL: filePath, settings: [String:AnyObject]())
+      try AVAudioRecorder(URL: filePath, settings: [String:AnyObject]())
     } catch let error as NSError {
       print(error.localizedDescription)
+      audioRecorder = nil
     }
-    audioRecorder.delegate = self
-    audioRecorder.meteringEnabled = true
-    audioRecorder.prepareToRecord()
-    audioRecorder.record()
+    audioRecorder?.delegate = self
+    audioRecorder?.meteringEnabled = true
+    audioRecorder?.prepareToRecord()
+    audioRecorder?.record()
+
+
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -75,6 +78,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
       self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
     } else {
       print("Recording was not successfull")
+      recordingLabel.attributedText = NSAttributedString(string: "Recording was not successfull", attributes: [NSForegroundColorAttributeName:UIColor.redColor()])
+      recordingLabel.hidden = false
       recordButton.enabled = true
       stopButton.hidden = true
     }
