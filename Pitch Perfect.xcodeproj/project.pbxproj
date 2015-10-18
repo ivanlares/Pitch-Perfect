@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EA24A5B61A26476400702077 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24A5B51A26476400702077 /* RecordedAudio.swift */; };
 		EA5C17531A21843100B0A9BA /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C17521A21843100B0A9BA /* PlaySoundsViewController.swift */; };
+		EA73C04B1BD4497B00944D04 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EA73C04A1BD4497B00944D04 /* .gitignore */; settings = {ASSET_TAGS = (); }; };
 		EAA41F321A205909008339BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA41F311A205909008339BA /* AppDelegate.swift */; };
 		EAA41F341A205909008339BA /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA41F331A205909008339BA /* RecordSoundsViewController.swift */; };
 		EAA41F371A205909008339BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA41F351A205909008339BA /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		EA24A5B51A26476400702077 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		EA5C17521A21843100B0A9BA /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		EA73C04A1BD4497B00944D04 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EAA41F2C1A205909008339BA /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA41F301A205909008339BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAA41F311A205909008339BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		EAA41F231A205909008339BA = {
 			isa = PBXGroup;
 			children = (
+				EA73C04A1BD4497B00944D04 /* .gitignore */,
 				EAA41F2E1A205909008339BA /* Pitch Perfect */,
 				EAA41F441A205909008339BA /* Pitch PerfectTests */,
 				EAA41F2D1A205909008339BA /* Products */,
@@ -163,7 +166,9 @@
 		EAA41F241A205909008339BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ivan;
 				TargetAttributes = {
 					EAA41F2B1A205909008339BA = {
@@ -199,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA73C04B1BD4497B00944D04 /* .gitignore in Resources */,
 				EAA41F371A205909008339BA /* Main.storyboard in Resources */,
 				EAA41F3C1A205909008339BA /* LaunchScreen.xib in Resources */,
 				EAA41F391A205909008339BA /* Images.xcassets in Resources */,
@@ -284,6 +290,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -348,6 +355,7 @@
 				INFOPLIST_FILE = "Pitch Perfect/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -360,6 +368,7 @@
 				INFOPLIST_FILE = "Pitch Perfect/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -369,16 +378,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Pitch PerfectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitch Perfect.app/Pitch Perfect";
 			};
@@ -388,12 +395,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Pitch PerfectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitch Perfect.app/Pitch Perfect";
 			};
