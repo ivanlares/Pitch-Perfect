@@ -68,10 +68,12 @@ class PlaySoundsViewController: UIViewController {
   @IBAction func stopAllSounds(sender: UIButton) {
     stopAudio()
   }
+  
   func stopAudio(){
     audioEngine?.stop()
     audioPlayer?.stop()
   }
+  
   func playAudioWithVariablePitch(pitch: Float){
     if let audioEngine = audioEngine, audioFile = audioFile{
       stopAudio()
@@ -91,4 +93,5 @@ class PlaySoundsViewController: UIViewController {
       audioPlayerNode.play()
     } else { print("Error with audioEngine/audioFile") }
   }
+  
 }

@@ -60,8 +60,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     audioRecorder?.meteringEnabled = true
     audioRecorder?.prepareToRecord()
     audioRecorder?.record()
-
-
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
