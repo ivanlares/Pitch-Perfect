@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0CE3BB1BE94C3900F53116 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA0CE3BA1BE94C3900F53116 /* README.md */; };
 		EA24A5B61A26476400702077 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA24A5B51A26476400702077 /* RecordedAudio.swift */; };
 		EA5C17531A21843100B0A9BA /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C17521A21843100B0A9BA /* PlaySoundsViewController.swift */; };
-		EA73C04B1BD4497B00944D04 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EA73C04A1BD4497B00944D04 /* .gitignore */; settings = {ASSET_TAGS = (); }; };
+		EA73C04B1BD4497B00944D04 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EA73C04A1BD4497B00944D04 /* .gitignore */; };
 		EAA41F321A205909008339BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA41F311A205909008339BA /* AppDelegate.swift */; };
 		EAA41F341A205909008339BA /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA41F331A205909008339BA /* RecordSoundsViewController.swift */; };
 		EAA41F371A205909008339BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA41F351A205909008339BA /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA0CE3BA1BE94C3900F53116 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EA24A5B51A26476400702077 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		EA5C17521A21843100B0A9BA /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		EA73C04A1BD4497B00944D04 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				EA73C04A1BD4497B00944D04 /* .gitignore */,
+				EA0CE3BA1BE94C3900F53116 /* README.md */,
 				EAA41F2E1A205909008339BA /* Pitch Perfect */,
 				EAA41F441A205909008339BA /* Pitch PerfectTests */,
 				EAA41F2D1A205909008339BA /* Products */,
@@ -227,6 +230,7 @@
 			files = (
 				EA24A5B61A26476400702077 /* RecordedAudio.swift in Sources */,
 				EAA41F341A205909008339BA /* RecordSoundsViewController.swift in Sources */,
+				EA0CE3BB1BE94C3900F53116 /* README.md in Sources */,
 				EA5C17531A21843100B0A9BA /* PlaySoundsViewController.swift in Sources */,
 				EAA41F321A205909008339BA /* AppDelegate.swift in Sources */,
 			);
