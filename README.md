@@ -13,11 +13,11 @@ Add cool effects to your voice.
 
 Lets learn togther
 
-*Fork 
-*Clone your Fork 
-*[Create a Topic Branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-*Commit and push changes to your Forked repository
-*Create a Pull Request
+* Fork 
+* Clone your Fork 
+* [Create a Topic Branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+* Commit and push changes to your Forked repository
+* Create a Pull Request
 
 #The MIT License (MIT)
 
