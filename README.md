@@ -1,25 +1,19 @@
-Pitch Perfect
+#Pitch Perfect
 ==============
 
-#Description
+###Description
 
 Add cool effects to your voice.
 
-#Setup
+###Setup
 
 * N/A
 
-#Contribute
+###Contribute
 
-Lets learn togther
+Lets learn together
 
-* Fork 
-* Clone your Fork 
-* [Create a Topic Branch](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-* Commit and push changes to your Forked repository
-* Create a Pull Request
-
-#The MIT License (MIT)
+###The MIT License (MIT)
 
 Copyright (c) 2015 Ivan Lares
 
@@ -40,3 +34,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
